@@ -10,9 +10,43 @@
         .section-title {
             text-align: center;
             margin-bottom: 2rem;
+            font-size: 2.5rem;
+            /* Un poco más grande para el título de sección */
+            color: #363636;
+            /* Color de texto más oscuro */
         }
 
-        /* Estilos adicionales para asegurar el centrado del navbar-start */
+        /* Estilos para el banner */
+        .banner-container {
+            margin-bottom: 0;
+        }
+
+        .banner {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* Estilos para la barra de navegación - Diseño Moderno */
+        .navbar.is-modern {
+            background-color: #ffffff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            border-bottom: 1px solid #eeeeee;
+        }
+
+        .navbar-item-modern {
+            color: #4a4a4a;
+            font-weight: 500;
+            padding: 1rem 1.25rem;
+            transition: color 0.3s ease, background-color 0.3s ease;
+        }
+
+        .navbar-item-modern:hover {
+            color: #3273dc;
+            background-color: #f5f5f5;
+        }
+
+        /* Centrado de los elementos del navbar-start */
         .navbar-menu {
             display: flex;
             justify-content: center;
@@ -22,37 +56,130 @@
             display: flex;
             justify-content: center;
             width: 100%;
-            /* Asegura que ocupe todo el ancho disponible */
         }
 
-        .navbar-item {
-            margin: 0 0.5rem;
-            /* Espacio entre los elementos del navbar */
+        /* Estilos para la fecha de publicación */
+        .news-date {
+            text-align: center;
+            font-size: 0.9rem;
+            color: #666;
+            margin-top: -0.5rem;
+            margin-bottom: 1.5rem;
+            font-style: italic;
+            /* La fecha en cursiva le da un toque más formal */
+        }
+
+        /* --- Estilos para el Bloque de Noticias - ¡PROFESIONAL! --- */
+        .news-article {
+            background-color: #ffffff;
+            /* Fondo blanco para la tarjeta de la noticia */
+            padding: 2.5rem;
+            /* Más padding para que el contenido respire */
+            border-radius: 8px;
+            /* Bordes ligeramente redondeados */
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+            /* Sombra más pronunciada para un efecto flotante */
+            margin-bottom: 3rem;
+            /* Espacio extra entre la noticia y la siguiente sección */
+            border-left: 5px solid #3273dc;
+            /* Una línea de color a la izquierda para un toque editorial */
+        }
+
+        .news-article .title.is-3 {
+            color: #2c3e50;
+            /* Un azul oscuro o casi negro para el título principal de la noticia */
+            margin-bottom: 1rem;
+            /* Espacio debajo del título */
+            font-size: 2.2rem;
+            /* Título de noticia un poco más grande */
+            line-height: 1.2;
+            /* Espaciado de línea para títulos largos */
+        }
+
+        .news-article p {
+            font-size: 1.05rem;
+            /* Fuente ligeramente más grande para el cuerpo del texto */
+            line-height: 1.7;
+            /* Mayor interlineado para mejor legibilidad */
+            color: #333;
+            /* Texto más oscuro para mayor contraste */
+            margin-bottom: 1.2rem;
+            /* Espacio entre párrafos */
+        }
+
+        .news-article ul {
+            margin-top: 1.5rem;
+            margin-bottom: 1.5rem;
+            padding-left: 1.5rem;
+            /* Indentación para la lista */
+            list-style: disc;
+            /* Vuelve a usar discos para las listas */
+        }
+
+        .news-article ul li {
+            margin-bottom: 0.7rem;
+            /* Espacio entre elementos de la lista */
+            font-size: 1.05rem;
+            color: #444;
+        }
+
+        .news-article .has-text-weight-semibold {
+            font-weight: 600;
+            /* Un poco más de negrita para enfatizar */
+            color: #222;
+        }
+
+        .news-article .has-text-weight-bold {
+            font-weight: 700;
+            color: #111;
+        }
+
+        /* Ajustes para el menú burger en móvil */
+        @media screen and (max-width: 1023px) {
+            .navbar-menu {
+                justify-content: flex-start;
+                padding: 0.5rem 0;
+            }
+
+            .navbar-start {
+                flex-direction: column;
+                width: auto;
+            }
+
+            .navbar-item-modern {
+                padding: 0.75rem 1rem;
+                width: 100%;
+                text-align: center;
+            }
+
+            .news-article {
+                padding: 1.5rem;
+                /* Menos padding en móvil para aprovechar el espacio */
+            }
         }
     </style>
 </head>
 
 <body>
-    <header class="hero is-info">
-        <div class="hero-body has-text-centered">
-            <h1 class="title">La Koldoneta</h1>
-            <p class="subtitle">¡Súbete a la Koldoneta!</p>
-        </div>
-    </header>
-
     <div class="banner-container">
         <figure class="image">
-            <img src="./imagenes/banner.jpg" alt="Banner de La Koldoneta" class="banner is-fluid">
+            <img src="./imagenes/banner.png" alt="Banner de La Koldoneta" class="banner is-fluid">
         </figure>
     </div>
 
-    <nav class="navbar is-info" role="navigation" aria-label="main navigation">
+    <nav class="navbar is-modern" role="navigation" aria-label="main navigation">
         <div class="navbar-brand">
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
+                data-target="navbarBasicExample">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
         </div>
-        <div id="navbarBasicExample" class="navbar-menu is-active">
+        <div id="navbarBasicExample" class="navbar-menu">
             <div class="navbar-start">
-                <a href="#news" class="navbar-item">Noticias</a>
-                <a href="#shop" class="navbar-item">Compras</a>
+                <a href="#news" class="navbar-item navbar-item-modern">Noticias</a>
+                <a href="#shop" class="navbar-item navbar-item-modern">Tienda</a>
             </div>
         </div>
     </nav>
@@ -61,9 +188,10 @@
         <section id="news" class="section">
             <h2 class="title is-2 section-title">Noticias de La Koldoneta</h2>
             <div class="news columns is-multiline">
-                <article class="column is-full">
+                <article class="column is-full news-article">
                     <h3 class="title is-3 has-text-info has-text-centered">COMUNICADO OFICIAL DE LA
                         KOLDONETA</h3>
+                    <p class="news-date">Publicado el 20 de mayo de 2025</p>
                     <p class="has-text-weight-semibold">¡Afición de la Koldoneta, el momento glorioso ha llegado!</p>
                     <p>Desde el palco presidencial, con una mezcla de orgullo y una pizca de esa deliciosa arrogancia
                         que tanto nos caracteriza, me dirijo a la mejor afición del universo fantasy: ¡vosotros! Vuestro
@@ -179,6 +307,23 @@
             <p>&copy; 2025 La Koldoneta - ¡Súbete a la Koldoneta!</p>
         </div>
     </footer>
+
+    <script>
+        // JavaScript para el menú burger de Bulma en móvil
+        document.addEventListener('DOMContentLoaded', () => {
+            const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+            if ($navbarBurgers.length > 0) {
+                $navbarBurgers.forEach(el => {
+                    el.addEventListener('click', () => {
+                        const target = el.dataset.target;
+                        const $target = document.getElementById(target);
+                        el.classList.toggle('is-active');
+                        $target.classList.toggle('is-active');
+                    });
+                });
+            }
+        });
+    </script>
 </body>
 
 </html>
