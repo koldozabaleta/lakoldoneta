@@ -134,6 +134,54 @@
             color: #111;
         }
 
+        /* --- Estilos para la sección de Tweets --- */
+        .tweet-card {
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+            margin-bottom: 2rem;
+            padding: 1.5rem;
+            border: 1px solid #e0e0e0;
+        }
+
+        .tweet-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+
+        .tweet-avatar {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin-right: 1rem;
+            object-fit: cover;
+        }
+
+        .tweet-author-info .name {
+            font-weight: bold;
+            color: #363636;
+        }
+
+        .tweet-author-info .handle {
+            color: #7a7a7a;
+            font-size: 0.9em;
+        }
+
+        .tweet-content {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            color: #4a4a4a;
+            margin-bottom: 1rem;
+        }
+
+        .tweet-meta {
+            font-size: 0.85rem;
+            color: #9a9a9a;
+            text-align: right;
+        }
+
+
         /* Ajustes para el menú burger en móvil */
         @media screen and (max-width: 1023px) {
             .navbar-menu {
@@ -179,6 +227,7 @@
         <div id="navbarBasicExample" class="navbar-menu">
             <div class="navbar-start">
                 <a href="#news" class="navbar-item navbar-item-modern">Noticias</a>
+                <a href="#tweets" class="navbar-item navbar-item-modern">Tweets</a>
                 <a href="#shop" class="navbar-item navbar-item-modern">Tienda</a>
             </div>
         </div>
@@ -191,7 +240,7 @@
                 <article class="column is-full news-article">
                     <h3 class="title is-3 has-text-info has-text-centered">COMUNICADO OFICIAL DE LA
                         KOLDONETA</h3>
-                    <p class="news-date">Publicado el 20 de mayo de 2025</p>
+                    <p class="news-date">Publicado el 25 de mayo de 2025</p>
                     <p class="has-text-weight-semibold">¡Afición de la Koldoneta, el momento glorioso ha llegado!</p>
                     <p>Desde el palco presidencial, con una mezcla de orgullo y una pizca de esa deliciosa arrogancia
                         que tanto nos caracteriza, me dirijo a la mejor afición del universo fantasy: ¡vosotros! Vuestro
@@ -199,7 +248,8 @@
                         abono perfecto para que la Koldoneta florezca hasta la mismísima cima.</p>
                     <p>Quiero extender mi más sincera enhorabuena a este visionario presidente (un servidor, modestia
                         aparte), que supo ver el potencial donde otros solo veían maleza. A nuestro brillante director
-                        técnico, cerebro estratégico detrás de cada alineación magistral. Y por supuesto, al míster, ese
+                        técnico (yo tambien), cerebro estratégico detrás de cada contratación magistral. Y por supuesto,
+                        al míster (ya sabeis quien es tambien), ese
                         jardinero táctico que ha sabido cultivar el talento de cada uno de nuestros jugadores hasta
                         alcanzar la excelencia.</p>
                     <p>Y hablando de excelencia... ¡qué decir de nuestros gladiadores! ¡De esta constelación de
@@ -247,9 +297,133 @@
                         (para nosotros). Que sigan
                         intentándolo, quizás la próxima temporada sus plantitas logren crecer un poquito más. ¡Pero este
                         año, el jardín de la victoria tiene un solo nombre: LA KOLDONETA!</p>
+                    <p class="has-text-weight-semibold">¡Contra todo y contra todos!</p>
                     <p class="has-text-weight-semibold">¡A celebrar esta floración de éxitos!</p>
+                    <p class="has-text-weight-semibold">¡SUBETE A LA KOLDONETA!</p>
                     <p class="has-text-weight-bold">El Presidente del glorioso Club de Fútbol La Koldoneta.</p>
                 </article>
+            </div>
+        </section>
+        <section id="tweets" class="section">
+            <h2 class="title is-2 section-title">El mundo del fútbol felicita a La Koldoneta</h2>
+            <div class="columns is-multiline">
+                <div class="column is-full-mobile is-half-tablet is-one-third-desktop">
+                    <div class="tweet-card">
+                        <div class="tweet-header">
+                            <img src="./imagenes/twitter/cristiano.jpg" alt="Avatar Cristiano Ronaldo"
+                                class="tweet-avatar">
+                            <div class="tweet-author-info">
+                                <p class="name">Cristiano Ronaldo</p>
+                                <p class="handle">@Cristiano</p>
+                            </div>
+                        </div>
+                        <div class="tweet-content">
+                            ¡Increíble temporada de La Koldoneta! 💪 La "Morosos League" tiene su primer campeón que lo
+                            ha dado todo. ¡Felicidades a todos los jardineros y al presidente! 🏆 ¡Siuuuuuu!
+                            #LaKoldoneta
+                            #Campeones
+                        </div>
+                        <div class="tweet-meta">
+                            Hace 10 minutos
+                        </div>
+                    </div>
+                </div>
+
+                <div class="column is-full-mobile is-half-tablet is-one-third-desktop">
+                    <div class="tweet-card">
+                        <div class="tweet-header">
+                            <img src="./imagenes/twitter/messi.jpg" alt="Avatar Leo Messi" class="tweet-avatar">
+                            <div class="tweet-author-info">
+                                <p class="name">Leo Messi</p>
+                                <p class="handle">@leomessisite</p>
+                            </div>
+                        </div>
+                        <div class="tweet-content">
+                            Felicidades a La Koldoneta por ganar la Morosos League. Un equipo que ha demostrado mucha
+                            garra y buen fútbol. ¡Disfruten el título! 🇦🇷 #KoldonetaCampeon #FutbolFantasy
+                        </div>
+                        <div class="tweet-meta">
+                            Hace 30 minutos
+                        </div>
+                    </div>
+                </div>
+
+                <div class="column is-full-mobile is-half-tablet is-one-third-desktop">
+                    <div class="tweet-card">
+                        <div class="tweet-header">
+                            <img src="./imagenes/twitter/tebas.jpg" alt="Avatar Zinedine Zidane" class="tweet-avatar">
+                            <div class="tweet-author-info">
+                                <p class="name">Javier Tebas</p>
+                                <p class="handle">@Tebasjavier</p>
+                            </div>
+                        </div>
+                        <div class="tweet-content">
+                            Grandioso trabajo de La Koldoneta en la Morosos League. La disciplina y el talento se han
+                            visto reflejados en el campo. ¡Enhorabuena! ⚽ #Victoria #LaKoldoneta
+                        </div>
+                        <div class="tweet-meta">
+                            Hace 1 hora
+                        </div>
+                    </div>
+                </div>
+
+                <div class="column is-full-mobile is-half-tablet is-one-third-desktop">
+                    <div class="tweet-card">
+                        <div class="tweet-header">
+                            <img src="./imagenes/twitter/guardiola.jpg" alt="Avatar Pep Guardiola" class="tweet-avatar">
+                            <div class="tweet-author-info">
+                                <p class="name">Pep Guardiola</p>
+                                <p class="handle">@PepTeam</p>
+                            </div>
+                        </div>
+                        <div class="tweet-content">
+                            Análisis táctico impecable de La Koldoneta. La Morosos League ha sido suya con merecimiento.
+                            Felicidades al cuerpo técnico y jugadores. Una demostración de cómo jugar al fútbol. 🧠
+                            #Koldoneta #MaestrosTácticos
+                        </div>
+                        <div class="tweet-meta">
+                            Hace 2 horas
+                        </div>
+                    </div>
+                </div>
+
+                <div class="column is-full-mobile is-half-tablet is-one-third-desktop">
+                    <div class="tweet-card">
+                        <div class="tweet-header">
+                            <img src="./imagenes/twitter/ramos.jpg" alt="Avatar Sergio Ramos" class="tweet-avatar">
+                            <div class="tweet-author-info">
+                                <p class="name">Sergio Ramos</p>
+                                <p class="handle">@SergioRamos</p>
+                            </div>
+                        </div>
+                        <div class="tweet-content">
+                            ¡¡CAMPEONES!! La Koldoneta ha escrito su nombre en la historia de la Morosos League. Orgullo
+                            y leyenda. ¡Enhorabuena, equipo! 💯 #Leyendas #LaKoldoneta
+                        </div>
+                        <div class="tweet-meta">
+                            Hace 3 horas
+                        </div>
+                    </div>
+                </div>
+
+                <div class="column is-full-mobile is-half-tablet is-one-third-desktop">
+                    <div class="tweet-card">
+                        <div class="tweet-header">
+                            <img src="./imagenes/twitter/casillas.jpg" alt="Avatar Iker Casillas" class="tweet-avatar">
+                            <div class="tweet-author-info">
+                                <p class="name">Iker Casillas</p>
+                                <p class="handle">@IkerCasillas</p>
+                            </div>
+                        </div>
+                        <div class="tweet-content">
+                            Desde la portería, mis felicitaciones a La Koldoneta por esta espectacular victoria en la
+                            Morosos League. Demostraron ser los mejores. 🧤 #MorososLeague #Campeones
+                        </div>
+                        <div class="tweet-meta">
+                            Hace 4 horas
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
         <section id="shop" class="section">
@@ -300,6 +474,8 @@
                 </article>
             </div>
         </section>
+
+
     </div>
 
     <footer class="footer is-info">
