@@ -1,0 +1,24 @@
+# Directorios de sistema operativo
+.DS_Store
+Thumbs.db
+
+# Archivos temporales de editores de texto/IDE (ej. VS Code, Sublime Text, Vim)
+*.swp
+*.swo
+*~
+.idea/
+.vscode/
+
+# Dependencias de paquetes (aunque no las uses directamente con un gestor, es buena práctica si en el futuro añades Node.js u otros)
+node_modules/
+
+# Archivos de logs
+*.log
+log/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Archivos de caché o temporales de desarrollo
+.cache/
+tmp/
