@@ -187,8 +187,15 @@
         /* Ajustes para el menú burger en móvil */
         @media screen and (max-width: 1023px) {
             .navbar-menu {
+                display: none;
+                /* Hide the menu by default on mobile */
                 justify-content: flex-start;
                 padding: 0.5rem 0;
+            }
+
+            .navbar-menu.is-active {
+                display: block;
+                /* Show the menu when 'is-active' class is present */
             }
 
             .navbar-start {
