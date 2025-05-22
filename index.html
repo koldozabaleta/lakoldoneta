@@ -109,20 +109,25 @@
             /* Espacio entre párrafos */
         }
 
-        .news-article ul {
-            margin-top: 1.5rem;
-            margin-bottom: 1.5rem;
-            padding-left: 1.5rem;
-            /* Indentación para la lista */
-            list-style: disc;
-            /* Vuelve a usar discos para las listas */
+        /* Modificación para la lista de jugadores para usar columnas Bulma */
+        .news-article .player-list {
+            list-style: none;
+            /* Quitamos el estilo de lista por defecto */
+            margin: 0;
+            /* Reiniciamos los márgenes */
+            padding: 0;
+            /* Reiniciamos el padding */
+            display: flex;
+            /* Para que las columnas internas funcionen */
+            flex-wrap: wrap;
+            /* Para que las columnas se envuelvan */
         }
 
-        .news-article ul li {
-            margin-bottom: 0.7rem;
-            /* Espacio entre elementos de la lista */
-            font-size: 1.05rem;
-            color: #444;
+        .news-article .player-list .column {
+            padding-top: 0.25rem;
+            /* Menos espacio vertical entre elementos de lista */
+            padding-bottom: 0.25rem;
+            /* Menos espacio vertical entre elementos de lista */
         }
 
         .news-article .has-text-weight-semibold {
@@ -265,41 +270,324 @@
                         estrellas botánicas que han dejado el verde virtual hecho un jardín de goles y paradas
                         espectaculares! Permítanme el honor de nombrar a estos campeones que han grabado sus nombres con
                         pétalos de gloria en la historia de la Koldoneta:</p>
-                    <ul>
-                        <li><span class="has-text-weight-bold has-text-success">Rosa "La Muralla" Roja:</span>
-                            Infranqueable bajo los
-                            palos, un muro de espinas para los rivales.</li>
-                        <li><span class="has-text-weight-bold has-text-success">Roble "El Baluarte" Fernández:</span>
-                            Sólido como la
-                            madera, un líder en la zaga.</li>
-                        <li><span class="has-text-weight-bold has-text-success">Girasol "El Flecha" López:</span> Veloz
-                            y deslumbrante,
-                            dejando rivales marchitos a su paso.</li>
-                        <li><span class="has-text-weight-bold has-text-success">Margarita "La Maga" Pérez:</span>
-                            Elegancia y visión de
-                            juego, sus pases son pura poesía floral.</li>
-                        <li><span class="has-text-weight-bold has-text-success">Tulipán "El Torbellino" García:</span>
-                            Un vendaval en el
-                            centro del campo, imparable y lleno de energía.</li>
-                        <li><span class="has-text-weight-bold has-text-success">Jazmín "El Filigrana" Sánchez:</span>
-                            Desborde y regate
-                            exquisito, un aroma embriagador para la defensa rival.</li>
-                        <li><span class="has-text-weight-bold has-text-success">Clavel "El Killer" Martínez:</span> ¡Gol
-                            y más gol! Su
-                            olfato goleador es tan intenso como su perfume.</li>
-                        <li><span class="has-text-weight-bold has-text-success">Violeta "La Asistenta" Ruiz:</span>
-                            Precisión y delicadeza
-                            en cada pase, la arquitecta de nuestros ataques.</li>
-                        <li><span class="has-text-weight-bold has-text-success">Hortensia "El Pulmón" Gómez:</span>
-                            Incansable y
-                            omnipresente, cubriendo cada rincón del campo.</li>
-                        <li><span class="has-text-weight-bold has-text-success">Lirio "El Elegante" Díaz:</span> Clase y
-                            distinción en
-                            cada movimiento, un espectáculo para la vista.</li>
-                        <li><span class="has-text-weight-bold has-text-success">Amapola "La Chispa" Vargas:</span>
-                            Explosiva y
-                            sorprendente, siempre lista para encender la pradera rival.</li>
-                    </ul>
+
+                    <div class="columns is-multiline is-mobile player-list">
+                        <div class="column is-full-mobile is-half-tablet is-half-desktop">
+                            <span class="has-text-weight-bold has-text-success">Diego Rico</span> (Eterno capitán)
+                        </div>
+                        <div class="column is-full-mobile is-half-tablet is-half-desktop">
+                            <span class="has-text-weight-bold has-text-success">Juan Soriano</span>
+                        </div>
+                        <div class="column is-full-mobile is-half-tablet is-half-desktop">
+                            <span class="has-text-weight-bold has-text-success">Azpilicueta</span>
+                        </div>
+                        <div class="column is-full-mobile is-half-tablet is-half-desktop">
+                            <span class="has-text-weight-bold has-text-success">Iñigo Martinez</span>
+                        </div>
+                        <div class="column is-full-mobile is-half-tablet is-half-desktop">
+                            <span class="has-text-weight-bold has-text-success">Cardona</span>
+                        </div>
+                        <div class="column is-full-mobile is-half-tablet is-half-desktop">
+                            <span class="has-text-weight-bold has-text-success">Dani Rodriguez</span>
+                        </div>
+                        <div class="column is-full-mobile is-half-tablet is-half-desktop">
+                            <span class="has-text-weight-bold has-text-success">Trébol de Cuatro Hojas</span> (La suerte
+                            del campeón)
+                        </div>
+                        <div class="column is-full-mobile is-half-tablet is-half-desktop">
+                            <span class="has-text-weight-bold has-text-success">Rioja</span>
+                        </div>
+                        <div class="column is-full-mobile is-half-tablet is-half-desktop">
+                            <span class="has-text-weight-bold has-text-success">Danjuma</span>
+                        </div>
+                        <div class="column is-full-mobile is-half-tablet is-half-desktop">
+                            <span class="has-text-weight-bold has-text-success">Milla</span>
+                        </div>
+                        <div class="column is-full-mobile is-half-tablet is-half-desktop">
+                            <span class="has-text-weight-bold has-text-success">Abel Ruiz</span>
+                        </div>
+                        <div class="column is-full-mobile is-half-tablet is-half-desktop">
+                            <span class="has-text-weight-bold has-text-success">Aspas</span>
+                        </div>
+                        <div class="column is-full-mobile is-half-tablet is-half-desktop">
+                            <span class="has-text-weight-bold has-text-success">Carlos Vicente</span>
+                        </div>
+                        <div class="column is-full-mobile is-half-tablet is-half-desktop">
+                            <span class="has-text-weight-bold has-text-success">Bambú de la Suerte</span> (Crecimiento
+                            imparable)
+                        </div>
+                        <div class="column is-full-mobile is-half-tablet is-half-desktop">
+                            <span class="has-text-weight-bold has-text-success">Comesaña</span>
+                        </div>
+                        <div class="column is-full-mobile is-half-tablet is-half-desktop">
+                            <span class="has-text-weight-bold has-text-success">Lo Celso</span>
+                        </div>
+                        <div class="column is-full-mobile is-half-tablet is-half-desktop">
+                            <span class="has-text-weight-bold has-text-success">Diego Conde</span>
+                        </div>
+                        <div class="column is-full-mobile is-half-tablet is-half-desktop">
+                            <span class="has-text-weight-bold has-text-success">Tenaglia</span>
+                        </div>
+                        <div class="column is-full-mobile is-half-tablet is-half-desktop">
+                            <span class="has-text-weight-bold has-text-success">Oscar Valentin</span>
+                        </div>
+                        <div class="column is-full-mobile is-half-tablet is-half-desktop">
+                            <span class="has-text-weight-bold has-text-success">Peonía</span> (Abundancia y buena
+                            fortuna)
+                        </div>
+                        <div class="column is-full-mobile is-half-tablet is-half-desktop">
+                            <span class="has-text-weight-bold has-text-success">Alex Baena</span>
+                        </div>
+                        <div class="column is-full-mobile is-half-tablet is-half-desktop">
+                            <span class="has-text-weight-bold has-text-success">Nianzou</span>
+                        </div>
+                        <div class="column is-full-mobile is-half-tablet is-half-desktop">
+                            <span class="has-text-weight-bold has-text-success">De Marcos</span>
+                        </div>
+                        <div class="column is-full-mobile is-half-tablet is-half-desktop">
+                            <span class="has-text-weight-bold has-text-success">Conor Gallagher</span>
+                        </div>
+                        <div class="column is-full-mobile is-half-tablet is-half-desktop">
+                            <span class="has-text-weight-bold has-text-success">Gazzaniga</span>
+                        </div>
+                        <div class="column is-full-mobile is-half-tablet is-half-desktop">
+                            <span class="has-text-weight-bold has-text-success">Valverde</span>
+                        </div>
+                        <div class="column is-full-mobile is-half-tablet is-half-desktop">
+                            <span class="has-text-weight-bold has-text-success">Orquídea</span> (Amor, belleza y buena
+                            suerte)
+                        </div>
+                        <div class="column is-full-mobile is-half-tablet is-half-desktop">
+                            <span class="has-text-weight-bold has-text-success">Koke</span>
+                        </div>
+                        <div class="column is-full-mobile is-half-tablet is-half-desktop">
+                            <span class="has-text-weight-bold has-text-success">Samu Costa</span>
+                        </div>
+                        <div class="column is-full-mobile is-half-tablet is-half-desktop">
+                            <span class="has-text-weight-bold has-text-success">Ejuke</span>
+                        </div>
+                        <div class="column is-full-mobile is-half-tablet is-half-desktop">
+                            <span class="has-text-weight-bold has-text-success">Abde</span>
+                        </div>
+                        <div class="column is-full-mobile is-half-tablet is-half-desktop">
+                            <span class="has-text-weight-bold has-text-success">Borja Iglesias</span>
+                        </div>
+                        <div class="column is-full-mobile is-half-tablet is-half-desktop">
+                            <span class="has-text-weight-bold has-text-success">Batalla</span>
+                        </div>
+                        <div class="column is-full-mobile is-half-tablet is-half-desktop">
+                            <span class="has-text-weight-bold has-text-success">Planta del Dinero</span> (Prosperidad y
+                            riqueza)
+                        </div>
+                        <div class="column is-full-mobile is-half-tablet is-half-desktop">
+                            <span class="has-text-weight-bold has-text-success">Gaya</span>
+                        </div>
+                        <div class="column is-full-mobile is-half-tablet is-half-desktop">
+                            <span class="has-text-weight-bold has-text-success">Jaureguizar</span>
+                        </div>
+                        <div class="column is-full-mobile is-half-tablet is-half-desktop">
+                            <span class="has-text-weight-bold has-text-success">Orri Oskarson</span>
+                        </div>
+                        <div class="column is-full-mobile is-half-tablet is-half-desktop">
+                            <span class="has-text-weight-bold has-text-success">Courtois</span>
+                        </div>
+                        <div class="column is-full-mobile is-half-tablet is-half-desktop">
+                            <span class="has-text-weight-bold has-text-success">Alderete</span>
+                        </div>
+                        <div class="column is-full-mobile is-half-tablet is-half-desktop">
+                            <span class="has-text-weight-bold has-text-success">Griezman</span>
+                        </div>
+                        <div class="column is-full-mobile is-half-tablet is-half-desktop">
+                            <span class="has-text-weight-bold has-text-success">Crisantemo</span> (Longevidad y
+                            felicidad)
+                        </div>
+                        <div class="column is-full-mobile is-half-tablet is-half-desktop">
+                            <span class="has-text-weight-bold has-text-success">Bartra</span>
+                        </div>
+                        <div class="column is-full-mobile is-half-tablet is-half-desktop">
+                            <span class="has-text-weight-bold has-text-success">Camavinga</span>
+                        </div>
+                        <div class="column is-full-mobile is-half-tablet is-half-desktop">
+                            <span class="has-text-weight-bold has-text-success">Brahim</span>
+                        </div>
+                        <div class="column is-full-mobile is-half-tablet is-half-desktop">
+                            <span class="has-text-weight-bold has-text-success">Casadó</span>
+                        </div>
+                        <div class="column is-full-mobile is-half-tablet is-half-desktop">
+                            <span class="has-text-weight-bold has-text-success">Sergio Gonzalez</span>
+                        </div>
+                        <div class="column is-full-mobile is-half-tablet is-half-desktop">
+                            <span class="has-text-weight-bold has-text-success">Luka Sucic</span>
+                        </div>
+                        <div class="column is-full-mobile is-half-tablet is-half-desktop">
+                            <span class="has-text-weight-bold has-text-success">Lirio de la Paz</span> (Armonía y buena
+                            energía)
+                        </div>
+                        <div class="column is-full-mobile is-half-tablet is-half-desktop">
+                            <span class="has-text-weight-bold has-text-success">Victor Roque</span>
+                        </div>
+                        <div class="column is-full-mobile is-half-tablet is-half-desktop">
+                            <span class="has-text-weight-bold has-text-success">Moncayola</span>
+                        </div>
+                        <div class="column is-full-mobile is-half-tablet is-half-desktop">
+                            <span class="has-text-weight-bold has-text-success">Fabio Silva</span>
+                        </div>
+                        <div class="column is-full-mobile is-half-tablet is-half-desktop">
+                            <span class="has-text-weight-bold has-text-success">Rodrygo</span>
+                        </div>
+                        <div class="column is-full-mobile is-half-tablet is-half-desktop">
+                            <span class="has-text-weight-bold has-text-success">Maffeo</span>
+                        </div>
+                        <div class="column is-full-mobile is-half-tablet is-half-desktop">
+                            <span class="has-text-weight-bold has-text-success">Essugo</span>
+                        </div>
+                        <div class="column is-full-mobile is-half-tablet is-half-desktop">
+                            <span class="has-text-weight-bold has-text-success">Árbol de Jade</span> (Suerte y riqueza)
+                        </div>
+                        <div class="column is-full-mobile is-half-tablet is-half-desktop">
+                            <span class="has-text-weight-bold has-text-success">Giuliano</span>
+                        </div>
+                        <div class="column is-full-mobile is-half-tablet is-half-desktop">
+                            <span class="has-text-weight-bold has-text-success">Lukebakio</span>
+                        </div>
+                        <div class="column is-full-mobile is-half-tablet is-half-desktop">
+                            <span class="has-text-weight-bold has-text-success">Fran Garcia</span>
+                        </div>
+                        <div class="column is-full-mobile is-half-tablet is-half-desktop">
+                            <span class="has-text-weight-bold has-text-success">Nayef Aguerd</span>
+                        </div>
+                        <div class="column is-full-mobile is-half-tablet is-half-desktop">
+                            <span class="has-text-weight-bold has-text-success">Bellingham</span>
+                        </div>
+                        <div class="column is-full-mobile is-half-tablet is-half-desktop">
+                            <span class="has-text-weight-bold has-text-success">Mumim</span>
+                        </div>
+                        <div class="column is-full-mobile is-half-tablet is-half-desktop">
+                            <span class="has-text-weight-bold has-text-success">Girasol</span> (Alegría y buena suerte)
+                        </div>
+                        <div class="column is-full-mobile is-half-tablet is-half-desktop">
+                            <span class="has-text-weight-bold has-text-success">Badé</span>
+                        </div>
+                        <div class="column is-full-mobile is-half-tablet is-half-desktop">
+                            <span class="has-text-weight-bold has-text-success">Miguel Gutierrez</span>
+                        </div>
+                        <div class="column is-full-mobile is-half-tablet is-half-desktop">
+                            <span class="has-text-weight-bold has-text-success">Pedri</span>
+                        </div>
+                        <div class="column is-full-mobile is-half-tablet is-half-desktop">
+                            <span class="has-text-weight-bold has-text-success">Berenguer</span>
+                        </div>
+                        <div class="column is-full-mobile is-half-tablet is-half-desktop">
+                            <span class="has-text-weight-bold has-text-success">Barry</span>
+                        </div>
+                        <div class="column is-full-mobile is-half-tablet is-half-desktop">
+                            <span class="has-text-weight-bold has-text-success">Isco</span> (El Mago)
+                        </div>
+                        <div class="column is-full-mobile is-half-tablet is-half-desktop">
+                            <span class="has-text-weight-bold has-text-success">Lavanda</span> (Calma y buena fortuna)
+                        </div>
+                        <div class="column is-full-mobile is-half-tablet is-half-desktop">
+                            <span class="has-text-weight-bold has-text-success">Torró</span>
+                        </div>
+                        <div class="column is-full-mobile is-half-tablet is-half-desktop">
+                            <span class="has-text-weight-bold has-text-success">Mbappe</span> (La mejor tortuga)
+                        </div>
+                        <div class="column is-full-mobile is-half-tablet is-half-desktop">
+                            <span class="has-text-weight-bold has-text-success">David Lopez</span>
+                        </div>
+                        <div class="column is-full-mobile is-half-tablet is-half-desktop">
+                            <span class="has-text-weight-bold has-text-success">Yeremy Pino</span>
+                        </div>
+                        <div class="column is-full-mobile is-half-tablet is-half-desktop">
+                            <span class="has-text-weight-bold has-text-success">Nico Williams</span>
+                        </div>
+                        <div class="column is-full-mobile is-half-tablet is-half-desktop">
+                            <span class="has-text-weight-bold has-text-success">Lejeune</span>
+                        </div>
+                        <div class="column is-full-mobile is-half-tablet is-half-desktop">
+                            <span class="has-text-weight-bold has-text-success">Jazmín</span> (Amor y prosperidad)
+                        </div>
+                        <div class="column is-full-mobile is-half-tablet is-half-desktop">
+                            <span class="has-text-weight-bold has-text-success">Ceballos</span>
+                        </div>
+                        <div class="column is-full-mobile is-half-tablet is-half-desktop">
+                            <span class="has-text-weight-bold has-text-success">Barrios</span>
+                        </div>
+                        <div class="column is-full-mobile is-half-tablet is-half-desktop">
+                            <span class="has-text-weight-bold has-text-success">Vargas</span>
+                        </div>
+                        <div class="column is-full-mobile is-half-tablet is-half-desktop">
+                            <span class="has-text-weight-bold has-text-success">Ayoze Perez</span>
+                        </div>
+                        <div class="column is-full-mobile is-half-tablet is-half-desktop">
+                            <span class="has-text-weight-bold has-text-success">Julian Alvarez</span>
+                        </div>
+                        <div class="column is-full-mobile is-half-tablet is-half-desktop">
+                            <span class="has-text-weight-bold has-text-success">Fermin</span>
+                        </div>
+                        <div class="column is-full-mobile is-half-tablet is-half-desktop">
+                            <span class="has-text-weight-bold has-text-success">Madreselva</span> (Prosperidad y
+                            riqueza)
+                        </div>
+                        <div class="column is-full-mobile is-half-tablet is-half-desktop">
+                            <span class="has-text-weight-bold has-text-success">Antony</span>
+                        </div>
+                        <div class="column is-full-mobile is-half-tablet is-half-desktop">
+                            <span class="has-text-weight-bold has-text-success">Greif</span>
+                        </div>
+                        <div class="column is-full-mobile is-half-tablet is-half-desktop">
+                            <span class="has-text-weight-bold has-text-success">Yangel Herrera</span>
+                        </div>
+                        <div class="column is-full-mobile is-half-tablet is-half-desktop">
+                            <span class="has-text-weight-bold has-text-success">Jesus Rodriguez</span>
+                        </div>
+                        <div class="column is-full-mobile is-half-tablet is-half-desktop">
+                            <span class="has-text-weight-bold has-text-success">Asencio</span>
+                        </div>
+                        <div class="column is-full-mobile is-half-tablet is-half-desktop">
+                            <span class="has-text-weight-bold has-text-success">Szczesny</span>
+                        </div>
+                        <div class="column is-full-mobile is-half-tablet is-half-desktop">
+                            <span class="has-text-weight-bold has-text-success">Loto</span> (Pureza y éxito)
+                        </div>
+                        <div class="column is-full-mobile is-half-tablet is-half-desktop">
+                            <span class="has-text-weight-bold has-text-success">Zubimendi</span>
+                        </div>
+                        <div class="column is-full-mobile is-half-tablet is-half-desktop">
+                            <span class="has-text-weight-bold has-text-success">Lenglet</span>
+                        </div>
+                        <div class="column is-full-mobile is-half-tablet is-half-desktop">
+                            <span class="has-text-weight-bold has-text-success">Sancet</span>
+                        </div>
+                        <div class="column is-full-mobile is-half-tablet is-half-desktop">
+                            <span class="has-text-weight-bold has-text-success">Cucho</span>
+                        </div>
+                        <div class="column is-full-mobile is-half-tablet is-half-desktop">
+                            <span class="has-text-weight-bold has-text-success">Diego Lopez</span>
+                        </div>
+                        <div class="column is-full-mobile is-half-tablet is-half-desktop">
+                            <span class="has-text-weight-bold has-text-success">Budimir</span>
+                        </div>
+                        <div class="column is-full-mobile is-half-tablet is-half-desktop">
+                            <span class="has-text-weight-bold has-text-success">Narciso</span> (Buena fortuna y
+                            prosperidad)
+                        </div>
+                        <div class="column is-full-mobile is-half-tablet is-half-desktop">
+                            <span class="has-text-weight-bold has-text-success">Raillo</span>
+                        </div>
+                        <div class="column is-full-mobile is-half-tablet is-half-desktop">
+                            <span class="has-text-weight-bold has-text-success">Vivian</span>
+                        </div>
+                        <div class="column is-full-mobile is-half-tablet is-half-desktop">
+                            <span class="has-text-weight-bold has-text-success">Darder</span>
+                        </div>
+                        <div class="column is-full-mobile is-half-tablet is-half-desktop">
+                            <span class="has-text-weight-bold has-text-success">Marcos Llorente</span>
+                        </div>
+                        <div class="column is-full-mobile is-half-tablet is-half-desktop">
+                            <span class="has-text-weight-bold has-text-success">Guerra</span>
+                        </div>
+                    </div>
                     <p>¡Equipo, sois la flor y nata del fantasy! Vuestra entrega, vuestro compromiso y vuestro talento
                         nos han llevado a la cúspide. ¡Este campeonato lleva vuestro aroma imborrable!</p>
                     <p class="has-text-weight-semibold">A mis queridos rivales... bueno, digamos que ha sido un placer
